@@ -1,0 +1,17 @@
+{
+  "extends": "../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+   "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts" // Make sure the declarations.d.ts is included
+  ]
+  }
+
